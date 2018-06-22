@@ -1,1 +1,76 @@
-﻿
+﻿.container {
+    display: grid;
+    /*grid-gap: 8px 8px;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px 55px repeat(4,75px);
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+
+header {
+    display:flex;
+    
+    padding-top: 10px;
+    padding-left: 30px;
+    grid-column: 1 / span 2;
+    background-color: pink;
+}
+.logo {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/ span 2;
+    grid-row: 2;
+    background-color: darkred;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 80px;
+    overflow: hidden;
+    background-color: darkred; 
+   
+}
+
+li {
+    float: left;
+     
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+main {
+    grid-column: 1 / span2;
+    grid-row: 3 / span3;
+    background-image: url('../Images/junkyard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+iframe{
+    padding:25px;
+}
